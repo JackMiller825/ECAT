@@ -50,13 +50,9 @@ Meme downloads use the original PNGs. On-screen scenes, the mascot, the logo, an
 
 ## Visitor dashboard
 
-The public page does not show attendance. A silent beacon still records three anonymous totals, and `/dashboard` shows them after the password `NeverSMILE`:
+The public page does not show attendance. A silent beacon records each browser session, and `/dashboard` opens after the password `NeverSMILE`.
 
-- people with the kingdom page open, through a presence connection
-- visits, counted once per browser session
-- page views, counted on each load
-
-The dashboard session is remembered in this browser tab until logout. Localhost uses separate counters from the public site. If a service is unreachable, that figure says it is unavailable instead of showing a made-up number. The page does not read wallets, names, or personal details.
+The dashboard shows who is active, unique visitors, visits, page views, copy and social clicks, an hourly or daily trend, referrals, campaigns, and a visit history with place, browser, path, and section. Development traffic stays hidden until that filter is turned on. IP addresses are not stored.
 
 ## Validation
 

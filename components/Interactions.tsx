@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { asset, officialUrl, token } from "@/lib/config";
+import { trackClick } from "@/lib/visit-log";
 export function OfficialLink({
   kind,
   className = "button",
@@ -14,17 +15,21 @@ export function OfficialLink({
     x: "Follow on X",
     swap: "Open official swap",
   };
+  const onClick = () => {
+    if (kind === "telegram" || kind === "x") trackClick(kind);
+  };
   return url ? (
     <a
       className={className}
       href={url}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={onClick}
     >
       {labels[kind]} ↗
     </a>
   ) : (
-    <span className={className + " unavailable"} aria-disabled="true">
+    <span className={className + " unavailable"} aria-disabled="true" onClick={onClick}>
       {kind === "x" ? "X" : kind === "swap" ? "Swap" : "Telegram"} · Coming soon
     </span>
   );

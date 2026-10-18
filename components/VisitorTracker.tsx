@@ -1,8 +1,7 @@
 "use client";
 
-import { useKingdomStats } from "./useKingdomStats";
+import VisitBeacon from "./VisitBeacon";
 
 export default function VisitorTracker() {
-  useKingdomStats(true);
-  return null;
+  return <VisitBeacon />;
 }

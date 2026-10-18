@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { asset, token, officialUrl } from "@/lib/config";
+import { trackClick } from "@/lib/visit-log";
 import Art from "./Art";
 function displayedContract(address: string) {
   return /^0x[0-9a-fA-F]{40}$/.test(address) ? address : "Coming Soon..";
@@ -45,6 +46,7 @@ export default function Vault() {
 
   function copy() {
     if (copied) return;
+    trackClick("copy");
     void copyText(shown).then((ok) => {
       if (ok) setCopied(true);
     });
