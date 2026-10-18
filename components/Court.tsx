@@ -38,11 +38,7 @@ export default function Court() {
           />
           <OfficialLink kind="telegram" className="button primary" />
           <OfficialLink kind="x" className="button" />
-          <small>
-            Membership requirements:
-            <br />
-            tolerate the cat.
-          </small>
+          <small>Membership requirements: tolerate the cat.</small>
         </div>
       </div>
     </section>

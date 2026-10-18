@@ -33,14 +33,14 @@ npm run build
 - Telegram, X, and official swap URLs
 - LP burn and ownership status, plus evidence links
 
-Empty or non-HTTPS links stay unavailable. They do not point at `#` or invented accounts. Copy and swap stay disabled until `contractAddress` is a real `0x` address of 40 hex characters and `swap` is an `https` URL. Leave burn and renunciation as `Planned` until there is on-chain evidence. Do not describe those settings as a safety guarantee.
+Empty or non-HTTPS links stay unavailable. They do not point at `#` or invented accounts. Copy always copies the contract line that is on screen, including `Coming Soon..` before a real address is set. The swap control stays off the page until you choose to add one. Leave burn and renunciation as `Planned` until there is on-chain evidence. Do not describe those settings as a safety guarantee.
 
 Set `NEXT_PUBLIC_SITE_URL` to the deployed HTTPS origin when you want absolute social images. Set `NEXT_PUBLIC_BASE_PATH` only for a project subdirectory such as `/ECAT`, with no trailing slash. The GitHub Pages workflow sets both from the Pages environment.
 
 ## Where things live
 
 - `app/`: page composition, metadata, and the visual system
-- `components/`: header, hero, origin, royal affairs, vault, entry, gallery, court, footer, and the live attendance counter
+- `components/`: header, hero, origin, royal affairs, vault, entry, gallery, court, footer, the silent visit beacon, and the private dashboard
 - `lib/config.ts`: token values, official links, asset helper, and meme captions
 - `public/assets/`: original artwork, local fonts, SVG effects, and WebP/AVIF display derivatives
 - `design-reference/`: the seven desktop section previews
@@ -48,14 +48,15 @@ Set `NEXT_PUBLIC_SITE_URL` to the deployed HTTPS origin when you want absolute s
 
 Meme downloads use the original PNGs. On-screen scenes, the mascot, the logo, and the gallery use the smaller AVIF/WebP files beside them.
 
-## Attendance
+## Visitor dashboard
 
-The court attendance band counts two anonymous things:
+The public page does not show attendance. A silent beacon still records three anonymous totals, and `/dashboard` shows them after the password `NeverSMILE`:
 
-- people with this page open, through a presence connection
+- people with the kingdom page open, through a presence connection
 - visits, counted once per browser session
+- page views, counted on each load
 
-It does not read wallets, names, or personal details. Localhost uses a separate counter from the public site. If either service is unreachable, that figure says it is unavailable instead of showing a made-up number.
+The dashboard session is remembered in this browser tab until logout. Localhost uses separate counters from the public site. If a service is unreachable, that figure says it is unavailable instead of showing a made-up number. The page does not read wallets, names, or personal details.
 
 ## Validation
 

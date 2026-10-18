@@ -21,12 +21,6 @@ export default function Footer() {
         <a href="#gallery">Memes</a>
         <a href="#court">The Court</a>
       </nav>
-      <p>
-        Ethercat is an independent meme project on Ethereum. No affiliation with
-        the Ethereum Foundation or Catcoin is implied.
-        <br />
-        Memecoin prices are volatile. No returns are promised.
-      </p>
     </footer>
   );
 }

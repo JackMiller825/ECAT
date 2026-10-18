@@ -2,16 +2,44 @@
 import { useState } from "react";
 import { asset, token, officialUrl } from "@/lib/config";
 import Art from "./Art";
+function displayedContract(address: string) {
+  return /^0x[0-9a-fA-F]{40}$/.test(address) ? address : "Coming Soon..";
+}
+
+function copyText(value: string) {
+  const area = document.createElement("textarea");
+  area.value = value;
+  area.setAttribute("readonly", "");
+  area.style.position = "fixed";
+  area.style.top = "0";
+  area.style.left = "0";
+  area.style.fontSize = "16px";
+  document.body.appendChild(area);
+  area.focus();
+  area.select();
+  area.setSelectionRange(0, value.length);
+  let copied = false;
+  try {
+    copied = document.execCommand("copy");
+  } catch {
+    copied = false;
+  }
+  area.remove();
+  if (copied) return Promise.resolve(true);
+  if (!navigator.clipboard?.writeText) return Promise.resolve(false);
+  return navigator.clipboard.writeText(value).then(
+    () => true,
+    () => false,
+  );
+}
+
 export default function Vault() {
   const [message, setMessage] = useState("");
-  const valid = /^0x[0-9a-fA-F]{40}$/.test(token.contractAddress);
-  async function copy() {
-    try {
-      await navigator.clipboard.writeText(token.contractAddress);
-      setMessage("Contract copied.");
-    } catch {
-      setMessage("Copy unavailable. Select the address manually.");
-    }
+  const shown = displayedContract(token.contractAddress);
+  function copy() {
+    void copyText(shown).then((copied) => {
+      setMessage(copied ? "Contract copied." : "Copy unavailable. Select the address manually.");
+    });
   }
   return (
     <section className="vault section" id="vault" aria-labelledby="vault-title">
@@ -82,8 +110,8 @@ export default function Vault() {
       </div>
       <div className="contract-bar">
         <span>CA:</span>
-        <code>{valid ? token.contractAddress : "Coming Soon.."}</code>
-        <button type="button" onClick={copy} disabled={!valid}>
+        <code>{shown}</code>
+        <button type="button" onClick={copy}>
           Copy CA
         </button>
       </div>

@@ -1,5 +1,4 @@
 import { asset } from "@/lib/config";
-import { OfficialLink } from "./Interactions";
 
 const steps = [
   {
@@ -57,9 +56,6 @@ export default function Entry() {
             )}
             <h3>{step.title}</h3>
             <p>{step.copy}</p>
-            {step.icon === "swap" ? (
-              <OfficialLink kind="swap" className="button small" />
-            ) : null}
           </article>
         ))}
       </div>
