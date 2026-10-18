@@ -714,12 +714,25 @@ button.text-link {
   box-shadow: 0 0 20px #a65aec40;
 }
 .contract-bar > span {
-  font: 24px var(--display);
+  font: 13px var(--display);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #d2acff;
 }
 .contract-bar code {
   flex: 1;
+  min-width: 0;
   overflow-wrap: anywhere;
-  font-size: 14px;
+  font-family: var(--display);
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.45;
+  color: #f6f1ff;
+  font-variant-numeric: lining-nums;
+  text-shadow:
+    0 1px 0 #6d4a90,
+    0 0 16px #9a62e040;
   user-select: all;
 }
 .contract-bar button {
@@ -1679,11 +1692,13 @@ html:has(dialog[open]) {
     flex-wrap: wrap;
   }
   .contract-bar code {
-    font-size: 12px;
+    font-size: 13px;
+    letter-spacing: 0.04em;
     min-width: 150px;
   }
   .contract-bar > span {
-    font-size: 19px;
+    font-size: 12px;
+    letter-spacing: 0.18em;
   }
   .contract-bar button {
     font-size: 10px;
