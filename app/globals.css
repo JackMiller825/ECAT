@@ -723,17 +723,15 @@ button.text-link {
   user-select: all;
 }
 .contract-bar button {
+  min-width: 76px;
   background: #3d1c65;
   border: 1px solid #af7ad9;
   border-radius: 5px;
   padding: 7px 12px;
   font-size: 12px;
 }
-.status-note {
-  text-align: center;
-  font-size: 11px;
-  margin-top: 14px;
-  color: #d4c0e9;
+.contract-bar button:disabled {
+  opacity: 1;
 }
 .entry {
   background:
@@ -1503,9 +1501,6 @@ html:has(dialog[open]) {
     font-size: 19px;
   }
   .contract-bar button {
-    font-size: 10px;
-  }
-  .status-note {
     font-size: 10px;
   }
   .entry h2 {

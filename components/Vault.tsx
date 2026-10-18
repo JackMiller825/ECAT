@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { asset, token, officialUrl } from "@/lib/config";
 import Art from "./Art";
 function displayedContract(address: string) {
@@ -34,11 +34,19 @@ function copyText(value: string) {
 }
 
 export default function Vault() {
-  const [message, setMessage] = useState("");
+  const [copied, setCopied] = useState(false);
   const shown = displayedContract(token.contractAddress);
+
+  useEffect(() => {
+    if (!copied) return;
+    const timer = window.setTimeout(() => setCopied(false), 3000);
+    return () => window.clearTimeout(timer);
+  }, [copied]);
+
   function copy() {
-    void copyText(shown).then((copied) => {
-      setMessage(copied ? "Contract copied." : "Copy unavailable. Select the address manually.");
+    if (copied) return;
+    void copyText(shown).then((ok) => {
+      if (ok) setCopied(true);
     });
   }
   return (
@@ -111,14 +119,10 @@ export default function Vault() {
       <div className="contract-bar">
         <span>CA:</span>
         <code>{shown}</code>
-        <button type="button" onClick={copy}>
-          Copy CA
+        <button type="button" onClick={copy} disabled={copied} aria-live="polite">
+          {copied ? "Copied" : "Copy CA"}
         </button>
       </div>
-      <p className="status-note" role="status">
-        {message ||
-          "Burn and renunciation are planned until confirmed on-chain."}
-      </p>
     </section>
   );
 }
