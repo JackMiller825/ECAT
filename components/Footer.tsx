@@ -3,17 +3,17 @@ import Art from "./Art";
 export default function Footer() {
   return (
     <footer>
-      <div className="footer-brand">
+      <a className="footer-brand wordmark" href="#home">
         <Art
           file="brand/ecat-logo-transparent"
           width={512}
           height={512}
-          alt="Ethercat circular logo"
+          alt=""
         />
-        <a className="wordmark" href="#home">
+        <span>
           Ethercat<small>$ECAT · Ethereum</small>
-        </a>
-      </div>
+        </span>
+      </a>
       <nav aria-label="Footer navigation">
         <a href="#accident">The Accident</a>
         <a href="#royal-affairs">Royal Affairs</a>
