@@ -6,7 +6,7 @@ export const token = {
   supply: "1,000,000,000",
   tax: "0%",
   chainId: 1,
-  contractAddress: "",
+  contractAddress: "0x8e1ef252b73389d3c5bb809d7fd334e14d74657f",
   telegram: "https://t.me/ethercat_ecat",
   x: "https://x.com/ethercat_ecat",
   swap: "",
