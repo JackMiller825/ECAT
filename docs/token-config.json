@@ -1,0 +1,17 @@
+{
+  "name": "Ethercat",
+  "ticker": "ECAT",
+  "chain": "Ethereum",
+  "chainId": 1,
+  "totalSupply": 1000000000,
+  "taxPercent": 0,
+  "contractAddress": null,
+  "contractDisplay": "Coming Soon..",
+  "lpStatus": "planned burn",
+  "ownershipStatus": "planned renunciation",
+  "telegram": null,
+  "twitter": null,
+  "swapUrl": null,
+  "lpEvidence": null,
+  "renounceEvidence": null
+}

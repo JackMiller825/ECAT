@@ -1,0 +1,307 @@
+[
+  {
+    "file": "tsconfig.json",
+    "bytes": 651,
+    "sha256": "c62a321526c0dfa21429af77f9cb7b3a195913d982c1719d74a31883a153bae7"
+  },
+  {
+    "file": "next-env.d.ts",
+    "bytes": 288,
+    "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+  },
+  {
+    "file": "AGENTS.md",
+    "bytes": 679,
+    "sha256": "063098f6cb31bb44c6f8fbea25b3876de7ee1e5f7d00a50dbab506f6415eb7f0"
+  },
+  {
+    "file": "package.json",
+    "bytes": 479,
+    "sha256": "cc35b3eee9200b64f6c6da32ac45bec8da51862a557fa5b4a21972f0b5ad63dd"
+  },
+  {
+    "file": "package-lock.json",
+    "bytes": 33405,
+    "sha256": "55b915c7fe9eb3c4dcf6f55386bc326d95d0e0c3bdd45d438a894582a0563b10"
+  },
+  {
+    "file": "next.config.ts",
+    "bytes": 345,
+    "sha256": "59efb9915f70a14be295f2339ac65483b2880db88a691cab71a3523942a89642"
+  },
+  {
+    "file": ".env.example",
+    "bytes": 213,
+    "sha256": "2f4e769817a7242569973046c36d9e5ed4df4942feea3aba4a36d5d0e12fb815"
+  },
+  {
+    "file": ".gitignore",
+    "bytes": 52,
+    "sha256": "c244f5d59416c0065ce961a4b9124a6aff58f78bd198769a8df4f97f8270489b"
+  },
+  {
+    "file": "README.md",
+    "bytes": 3689,
+    "sha256": "151024a52807f4faba3531f5de90b3a8ebca447474b714d2cc2dea7260c5e785"
+  },
+  {
+    "file": "docs/MOTION-AND-ASSET-MAPPING.md",
+    "bytes": 1955,
+    "sha256": "8ba05318af29f227bb8833ae5a6c13fba3f9736e1cd32b4ad0601f96366fd4ce"
+  },
+  {
+    "file": "docs/WEBSITE-STORY-AND-LAYOUT.md",
+    "bytes": 6960,
+    "sha256": "eab9efb73e6efbba98ac90085d6a2a0c83d7740034c278ca684838bdd07c271a"
+  },
+  {
+    "file": "docs/VALIDATION.md",
+    "bytes": 606,
+    "sha256": "95e445ef4c3c2df31c9ad720265aaaa0c249890b48faf45cdbf915c03116ef2f"
+  },
+  {
+    "file": "docs/token-config.json",
+    "bytes": 379,
+    "sha256": "52bf892b6ba3ca2fec511ad17bfe363964d3ec92251ba492fa27c2ecfdfafe2f"
+  },
+  {
+    "file": "docs/meme-captions.json",
+    "bytes": 344,
+    "sha256": "6532353cd403fad492ff757d6c0b9b54da265c7be6a0c7f7d8516de76066251e"
+  },
+  {
+    "file": "app/globals.css",
+    "bytes": 24358,
+    "sha256": "6a247bbb091f126c81a02a24584e83f30a8f5668e1b14f47dfea83765719bbd0"
+  },
+  {
+    "file": "app/page.tsx",
+    "bytes": 666,
+    "sha256": "46073421ad10f2fd449670767154aa822ff951163eb5e628d85cceec622a193c"
+  },
+  {
+    "file": "app/layout.tsx",
+    "bytes": 1090,
+    "sha256": "8554a25192a53203c0f046d83a9a863c29eb2d7234ce7ac7bc02e42c84f49058"
+  },
+  {
+    "file": "components/Header.tsx",
+    "bytes": 896,
+    "sha256": "3e5ed134fa7f05b162ba12ac4d1dc51d00ba6119542a73d9c5a0f7644afb34bb"
+  },
+  {
+    "file": "components/Entry.tsx",
+    "bytes": 1920,
+    "sha256": "ee4d4a7502c0ad5c411799aef72ca99bfdb819ce635eebaf21e55049ab85c382"
+  },
+  {
+    "file": "components/Hero.tsx",
+    "bytes": 1407,
+    "sha256": "42d1da3dcf0e04882e527ac212160abc4264be5b6e0830220971f9435aff0ae4"
+  },
+  {
+    "file": "components/MemeGallery.tsx",
+    "bytes": 4801,
+    "sha256": "adfb26c00742acbedeb840000a2e128eed01b07b21ee679583f03e6ebb50a73d"
+  },
+  {
+    "file": "components/Interactions.tsx",
+    "bytes": 3647,
+    "sha256": "81698fd150bef4ae898931dae2224ab246ac150d961467c4a893ccc999799b0b"
+  },
+  {
+    "file": "components/Vault.tsx",
+    "bytes": 2655,
+    "sha256": "39df199d48fd3940c9e6bd542f05b6317d8899c9515752a2c5228ebdea1f000c"
+  },
+  {
+    "file": "components/Footer.tsx",
+    "bytes": 926,
+    "sha256": "7c747139c76e712a987b54603334f139c6fc9e9d4d15148d01c0446fb893157b"
+  },
+  {
+    "file": "components/RoyalAffairs.tsx",
+    "bytes": 3802,
+    "sha256": "6ae8baf40be9c97a7eac391936bed0b4205c8a70cfdce7fef641ea47b06026fd"
+  },
+  {
+    "file": "components/Origin.tsx",
+    "bytes": 2369,
+    "sha256": "c002758e294d2670add7ef19235a872c4396d3cb7363c8ca2e0da93819b9255a"
+  },
+  {
+    "file": "components/Court.tsx",
+    "bytes": 1035,
+    "sha256": "022fc43d41a0e2ed4807489289062c491e1066b39216eb4ab5f4aec5b9cd89bd"
+  },
+  {
+    "file": "design-reference/ecat-layout-04-vault-entry.png",
+    "bytes": 2895068,
+    "sha256": "914a6540ab54c6257a820c5f0753a602bda32a9c846dc29be9f4354865a8c142"
+  },
+  {
+    "file": "design-reference/ecat-layout-00-full-page.png",
+    "bytes": 3494244,
+    "sha256": "957d6cde2fc4b43d3b28d02367bc183c4935672c4b980803cc5da71f20166cec"
+  },
+  {
+    "file": "design-reference/ecat-layout-01-hero.png",
+    "bytes": 3054535,
+    "sha256": "b7ec4597dca2bd903c8f0e51d6b5e84a4e6885ad1d6a5e0ffed76a1433d83432"
+  },
+  {
+    "file": "design-reference/ecat-layout-05-meme-gallery.png",
+    "bytes": 2693972,
+    "sha256": "18f69e6e3aab4ba5b3e247b87f3b40815734c2fd189cddb309feee175a710fcd"
+  },
+  {
+    "file": "design-reference/ecat-layout-02-box-story.png",
+    "bytes": 2686966,
+    "sha256": "2376ee16aac5bb8358c8e996533c10a6c781d5ae27edfd26ddf918572fc1d126"
+  },
+  {
+    "file": "design-reference/ecat-layout-03-portal-throne.png",
+    "bytes": 2863885,
+    "sha256": "3c39cf11039e6e8427fb51c7ceeaef1323b22b2a97012c934622aab28985b429"
+  },
+  {
+    "file": "design-reference/ecat-layout-06-community-footer.png",
+    "bytes": 2873976,
+    "sha256": "3184b2d09ab5fc67c6b138d3e6c14d47333368052bd618f5e46f53630eb49257"
+  },
+  {
+    "file": "lib/config.ts",
+    "bytes": 1329,
+    "sha256": "e9d5d5116a1ff53d579dbb79daec0183c702852b643e3ebe36b3e44101f8d269"
+  },
+  {
+    "file": "public/assets/scenes/ecat-story-03-throne.png",
+    "bytes": 3009570,
+    "sha256": "b283e20b7a5525e43cbd263997ba5e3632932fb1f92683baf2b5ab2f4af77af2"
+  },
+  {
+    "file": "public/assets/scenes/ecat-hero-kingdom.png",
+    "bytes": 3366282,
+    "sha256": "7fc5f3df111e98b17dffafef8ef08474007878e16410abd4937ec1df3e7d842c"
+  },
+  {
+    "file": "public/assets/scenes/ecat-community.png",
+    "bytes": 2935683,
+    "sha256": "34bb33601eb287927556b083fc0b0dc217409a925347faecee8a421812b6b2db"
+  },
+  {
+    "file": "public/assets/scenes/ecat-treasury.png",
+    "bytes": 3226333,
+    "sha256": "6b18cfba408c8eebe6bd7f417a4e1f71c301cdd6b2decfbd64b2f59d6a746d6a"
+  },
+  {
+    "file": "public/assets/scenes/ecat-story-02-portal.png",
+    "bytes": 3023632,
+    "sha256": "196fe9c22c2df3e39b2c11cc9f0306d820f90560ba84de77eae80e0f4da05211"
+  },
+  {
+    "file": "public/assets/scenes/ecat-story-01-box.png",
+    "bytes": 2780543,
+    "sha256": "6b3416b1451f8e1c27b50c89c44906d04708c2c0f2684595b9b395d22165e2bc"
+  },
+  {
+    "file": "public/assets/fonts/royal-serif.otf",
+    "bytes": 110236,
+    "sha256": "f054a7389d8d0e9f4c5f7b4c21feb7e2b14bec8004a1e92778a78d149524eea9"
+  },
+  {
+    "file": "public/assets/fonts/body-sans.ttf",
+    "bytes": 759720,
+    "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280"
+  },
+  {
+    "file": "public/assets/characters/ecat-mascot-cutout.png",
+    "bytes": 2353871,
+    "sha256": "92dbcc0835da6318093ff7beb17aebc1b59bc4321f7fc5db5edb44a2f77a5b6d"
+  },
+  {
+    "file": "public/assets/effects/ecat-paw.svg",
+    "bytes": 315,
+    "sha256": "b208822c9b19f1722adbeebcd06d4c4442319d455a48717397daa2403c40af06"
+  },
+  {
+    "file": "public/assets/effects/ecat-portal-ring.svg",
+    "bytes": 267,
+    "sha256": "b7fc22b23a09050c181c1e7e608417160b954f0077aeb95585e0a5ac744d0ed7"
+  },
+  {
+    "file": "public/assets/effects/ecat-diamond.svg",
+    "bytes": 215,
+    "sha256": "675e5e5a3e0c7607e06d9bd42cb37ae3c24dc6ba7b82e7f3a57e99ace6aab863"
+  },
+  {
+    "file": "public/assets/effects/ecat-sparkle.svg",
+    "bytes": 144,
+    "sha256": "3392ef584eb01d1321f73fcaadeff7074d2a8d9d99399464daf8421c0bc9a255"
+  },
+  {
+    "file": "public/assets/brand/ecat-logo-transparent.png",
+    "bytes": 2710384,
+    "sha256": "408f976d6f0d8f9b4a66ae75bf1912bd03539ff5d9558fa2c6d296caeaaaf178"
+  },
+  {
+    "file": "public/assets/brand/ecat-tg-banner.png",
+    "bytes": 3184684,
+    "sha256": "e98ec96488d445447aa70537dedee0e45981d7f7d46bfcc24786f728c69e4984"
+  },
+  {
+    "file": "public/assets/brand/ecat-banner.png",
+    "bytes": 3138381,
+    "sha256": "3dd7b0f8e6b2496c151ebb39929e2bbc326a8e218f911533e9fa0aa3114207bd"
+  },
+  {
+    "file": "public/assets/brand/ecat-mascot-concept.png",
+    "bytes": 3079345,
+    "sha256": "6dac6e0f453335e6ac9908b3c9fa83f6b25b698e0a49978e0f2b1b40a5f10260"
+  },
+  {
+    "file": "public/assets/memes/ecat-meme-03-laughing.png",
+    "bytes": 2192626,
+    "sha256": "17692ccb6d69957a671e74ec7db4b1394977495dce82a16dcac63ecbde674c07"
+  },
+  {
+    "file": "public/assets/memes/ecat-meme-04-angry.png",
+    "bytes": 2311603,
+    "sha256": "11b962a792102b2a7698b068ef2afb151802c9dfa8bbd59d6d3bc6c6e641b39f"
+  },
+  {
+    "file": "public/assets/memes/ecat-meme-02-shocked.png",
+    "bytes": 2470083,
+    "sha256": "b8fd817bb38b937c32b13f8b1008442ddeebd06b17011d2737ac676a218a3eab"
+  },
+  {
+    "file": "public/assets/memes/ecat-meme-01-smug.png",
+    "bytes": 2767062,
+    "sha256": "3334c8492a41865e00d8292afabccd32a3ae5f3fa54496e144d89fad5b4fee0a"
+  },
+  {
+    "file": "public/assets/memes/ecat-meme-05-tired.png",
+    "bytes": 2704931,
+    "sha256": "7cb61497f1ddae0097a85e680f8696cacbd71b8b9bc2f53e53a45e23814b52e5"
+  },
+  {
+    "file": "public/assets/memes/ecat-meme-06-loving.png",
+    "bytes": 2261408,
+    "sha256": "00a524cc4ba52f1c1a75a37980da1566ac048fd207020f549f202971017a2500"
+  },
+  {
+    "file": "public/assets/fonts/licenses/URW-copyright.txt",
+    "bytes": 52517,
+    "sha256": "1315a62758a603a3e6e87a79b8389563789c59c1740b9db8bc2b20e2e2145458"
+  },
+  {
+    "file": "public/assets/fonts/licenses/DejaVu-copyright.txt",
+    "bytes": 3859,
+    "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+  },
+  {
+    "file": ".github/workflows/pages.yml",
+    "bytes": 920,
+    "sha256": "3560e25e7b64cd5b1e29fa918de93ad131e5175f8524270502a6d9d35e49fd37"
+  }
+]
